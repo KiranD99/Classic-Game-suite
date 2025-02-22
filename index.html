@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Games Suite</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1>Classic Games Suite</h1>
+        <button id="darkModeToggle">Toggle Dark Mode</button>
+    </nav>
+    <div class="container">
+        <div class="game-selection">
+            <button id="snakeBtn">Snake</button>
+            <button id="tictactoeBtn">Tic-Tac-Toe</button>
+            <button id="pongBtn">Pong</button>
+            <button id="breakoutBtn">Breakout</button>
+        </div>
+
+        <!-- Snake Game -->
+        <div id="snakeGame" class="game-container hidden">
+            <canvas id="snakeCanvas" width="400" height="400"></canvas>
+            <div id="snakeScore">Score: 0</div>
+            <button id="snakeReset">Reset Snake</button>
+        </div>
+
+        <!-- Tic-Tac-Toe Game -->
+        <div id="tictactoeGame" class="game-container hidden">
+            <div id="status">Player X's turn</div>
+            <div id="board"></div>
+            <button id="reset">Reset Game</button>
+        </div>
+
+        <!-- Pong Game -->
+        <div id="pongGame" class="game-container hidden">
+            <canvas id="pongCanvas" width="600" height="400"></canvas>
+            <div id="pongScore">Player: 0 | AI: 0</div>
+            <button id="pongReset">Reset Pong</button>
+        </div>
+
+        <!-- Breakout Game -->
+        <div id="breakoutGame" class="game-container hidden">
+            <canvas id="breakoutCanvas" width="480" height="320"></canvas>
+            <div id="breakoutScore">Score: 0</div>
+            <button id="breakoutReset">Reset Breakout</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="snake.js"></script>
+    <script src="tictactoe.js"></script>
+    <script src="pong.js"></script>
+    <script src="breakout.js"></script>
+</body>
+</html>
